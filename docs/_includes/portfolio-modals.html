@@ -21,10 +21,11 @@
                                 <p class="item-intro text-muted">{{ project.claim }}</p>
                                 <img class="img-responsive img-centered" src="/assets/img/portfolio/{{ project.bigPhoto }}" alt="{{ project.img-alt }}">
                                 <div class="Video">
-                                    {{project.embed}}
+                                    {{ project.embed }}
                                 </div>
                                 <p>{{ project.description }}</p>
-                                <p>Project site: <a href="{{ project.web }}">{{ project.webText }}</a></p>
+                                {{project.web}}
+                                <div class="BigBr"></div>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
