@@ -45,7 +45,7 @@
   category: "GPGPU Visualisation"
   date: "August 2022"
   client: "Client name"
-  web: <p>Project site <a href="https://github.com/aemsle/CheeseBoard">Cheese Board</a></p>
+  web: <p>Project site <a href="https://github.com/aemsle/JuiliaSetRenderer">Juilia Set Renderer</a></p>
   photo: "gpgpu.png"
   bigPhoto: "JuliaSet.gif"
   img-alt: "Photo description"
