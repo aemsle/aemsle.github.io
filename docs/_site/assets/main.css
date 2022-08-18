@@ -56,12 +56,19 @@ h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", "Helvetica Neue", Helvetica,
   .navbar-custom .navbar-nav > .active > a { border-radius: 3px; } }
 @media (min-width: 768px) { .navbar-custom.affix { background-color: #152d3c; padding: 10px 0; }
   .navbar-custom.affix .navbar-brand { font-size: 1.5em; } }
-header { background-image: url("../assets/img/header-bg.jpg"); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; text-align: center; }
-header .intro-text { padding-top: 100px; padding-bottom: 50px; }
-header .intro-text .intro-lead-in { font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: italic; font-size: 22px; line-height: 22px; margin-bottom: 25px; color: #dddddddd; }
-header .intro-text .intro-heading { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; font-weight: 700; font-size: 50px; line-height: 50px; margin-bottom: 25px; color: white; }
+header { background-color: black; text-align: center; width: 100%; /* Hide the images by default */ /* Fading animation */ }
+header .slideshow-container { width: 100%; background-position: center center; position: relative; margin: auto; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
+header .mySlides { display: none; }
+header .container { padding: 0%; width: 100%; }
+header .fade { animation-name: fade; animation-duration: 10s; }
+@keyframes fade { 0% { opacity: 0; }
+  25% { opacity: .7; }
+  75% { opacity: .7; }
+  100% { opacity: 0; } }
+header .intro-text .intro-lead-in { position: absolute; top: 47.5%; left: 50%; transform: translate(-50%, -50%); font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: italic; font-size: 22px; line-height: 22px; margin-bottom: 25px; color: #dddddddd; }
+header .intro-text .intro-heading { position: absolute; top: 52.5%; left: 50%; transform: translate(-50%, -50%); font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; font-weight: 700; font-size: 50px; line-height: 50px; margin-bottom: 25px; color: #dddddddd; }
 
-@media (min-width: 768px) { header .intro-text { padding-top: 300px; padding-bottom: 200px; }
+@media (min-width: 768px) { header .intro-text { padding-top: 0px; padding-bottom: 0px; }
   header .intro-text .intro-lead-in { font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: italic; font-size: 40px; line-height: 40px; margin-bottom: 25px; }
   header .intro-text .intro-heading { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; font-weight: 700; font-size: 75px; line-height: 75px; margin-bottom: 50px; } }
 section { padding: 100px 0; }
@@ -85,40 +92,6 @@ section h3.section-subheading { font-size: 16px; font-family: "Droid Serif", "He
 #portfolio * { z-index: 2; }
 
 @media (min-width: 767px) { #portfolio .portfolio-item { margin: 0 0 30px; } }
-.timeline { list-style: none; padding: 0; position: relative; }
-.timeline:before { top: 0; bottom: 0; position: absolute; content: ""; width: 2px; left: 40px; margin-left: -1.5px; }
-.timeline > li { margin-bottom: 50px; position: relative; min-height: 50px; }
-.timeline > li:before, .timeline > li:after { content: " "; display: table; }
-.timeline > li:after { clear: both; }
-.timeline > li .timeline-panel { width: 100%; float: right; padding: 0 20px 0 100px; position: relative; text-align: left; }
-.timeline > li .timeline-panel:before { border-left-width: 0; border-right-width: 15px; left: -15px; border-color: #208c7a; right: auto; }
-.timeline > li .timeline-panel:after { border-left-width: 0; border-right-width: 14px; border-color: #208c7a; left: -14px; right: auto; }
-.timeline > li .timeline-image { left: 0; margin-left: 0; width: 80px; height: 80px; position: absolute; z-index: 100; background-color: #58bc82; color: white; border-radius: 100%; border-color: #208c7a; border: 7px solid #f1f1f1; text-align: center; }
-.timeline > li .timeline-image h4 { font-size: 10px; margin-top: 12px; line-height: 14px; }
-.timeline > li.timeline-inverted > .timeline-panel { float: right; text-align: left; padding: 0 20px 0 100px; }
-.timeline > li.timeline-inverted > .timeline-panel:before { border-left-width: 0; border-right-width: 15px; left: -15px; right: auto; }
-.timeline > li.timeline-inverted > .timeline-panel:after { border-left-width: 0; border-right-width: 14px; left: -14px; right: auto; }
-.timeline > li:last-child { margin-bottom: 0; }
-.timeline .timeline-heading h4 { margin-top: 0; color: inherit; }
-.timeline .timeline-heading h4.subheading { text-transform: none; }
-.timeline .timeline-body > p, .timeline .timeline-body > ul { margin-bottom: 0; }
-
-@media (min-width: 768px) { .timeline:before { left: 50%; }
-  .timeline > li { margin-bottom: 100px; min-height: 100px; }
-  .timeline > li .timeline-panel { width: 41%; float: left; padding: 0 20px 20px 30px; text-align: right; }
-  .timeline > li .timeline-image { width: 100px; height: 100px; left: 50%; margin-left: -50px; }
-  .timeline > li .timeline-image h4 { font-size: 13px; margin-top: 16px; line-height: 18px; }
-  .timeline > li.timeline-inverted > .timeline-panel { float: right; text-align: left; padding: 0 30px 20px 20px; } }
-@media (min-width: 992px) { .timeline > li { min-height: 150px; }
-  .timeline > li .timeline-panel { padding: 0 20px 20px; }
-  .timeline > li .timeline-image { width: 150px; height: 150px; margin-left: -75px; }
-  .timeline > li .timeline-image h4 { font-size: 18px; margin-top: 30px; line-height: 26px; }
-  .timeline > li.timeline-inverted > .timeline-panel { padding: 0 20px 20px; } }
-@media (min-width: 1200px) { .timeline > li { min-height: 170px; }
-  .timeline > li .timeline-panel { color: white; padding: 0 20px 20px 100px; }
-  .timeline > li .timeline-image { width: 170px; height: 170px; margin-left: -85px; }
-  .timeline > li .timeline-image h4 { margin-top: 40px; }
-  .timeline > li.timeline-inverted > .timeline-panel { padding: 0 100px 20px 20px; } }
 footer { padding: 25px 0; text-align: center; }
 footer span.copyright { line-height: 40px; font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; }
 footer ul.quicklinks { margin-bottom: 0; line-height: 40px; font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-transform: none; }
