@@ -20,6 +20,7 @@
   web: "https://jaymarbu.itch.io/escape-the-uwuverse"
   webText: "Escape The UwUVerse"
   photo: "UWU.png"
+  embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/0OFxFwErKns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   bigPhoto: "large-UWU.png"
   img-alt: "Photo description"
   id: "portfolioModal02"

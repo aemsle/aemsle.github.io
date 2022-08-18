@@ -21,7 +21,7 @@
                                 <p class="item-intro text-muted">{{ project.claim }}</p>
                                 <img class="img-responsive img-centered" src="/assets/img/portfolio/{{ project.bigPhoto }}" alt="{{ project.img-alt }}">
                                 <div class="Video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0OFxFwErKns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    {{project.embed}}
                                 </div>
                                 <p>{{ project.description }}</p>
                                 <p>Project site: <a href="{{ project.web }}">{{ project.webText }}</a></p>
