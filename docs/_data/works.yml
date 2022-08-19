@@ -55,17 +55,17 @@
   call-to-action: "Est blanditiis quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo."
 
 - order: 005
-  name: "Cheese Board"
-  category: "Game Engine"
+  name: "Audio Playground"
+  category: "FMOD Middleware Project"
   date: "August 2022"
   client: "Client name"
-  web: <p>Project site <a href="https://github.com/aemsle/CheeseBoard">Cheese Board</a></p>
-  photo: "CB.png"
-  bigPhoto: "UI.gif"
+  web: <p>Project site <a href="https://aemslie00.itch.io/audio-playground?password=beepboopblep">Audio Playground</a></p>
+  photo: "small-audio.png"
+  bigPhoto: "audio.png"
   img-alt: "Photo description"
   id: "portfolioModal10"
-  description: "Escape the UwUverse is the largest scale projects I have worked on. It was developed for Dare Academy 2021 game design competition hosted by Abertay University. The project took three months do conceptualise and develop. I handled audio implementation, design, music composition, level design and the creation of the \"Blu Cow Template\" that most game systems were relient on."
-  claim: "Funny Lil Project :)"
+  description: "This project was developed for my audio module at abertay university. The project uses the FMOD middleware."
+  claim: "FMOD prototype"
   call-to-action: "Est blanditiis quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo."
 
 - order: 006
