@@ -14,6 +14,16 @@ layout: default
 * * *
 
 
+### Education & Employment
+
+| Name | duration | Role |
+|:-----|:---------|:-----|
+| [Abertay University](https://www.abertay.ac.uk/)  | 09/2018 - 09/2022 | BSc (Hons) Computer Game Applications Development 2:1|
+| [Playground Games](https://playground-games.com/) | 12/2022 - Present | Systems Engineer Grade 1|
+
+* * *
+
+
 ### Student Projects
 
 | Name | desc | type |
@@ -24,16 +34,6 @@ layout: default
 | [Wired Up](./WiredUp.html) | 64th Place in GMTK 2021 Game Jam | Video Game  |
 | [Blu Cow App Manager](./AppManager.html) | Singleton Utility for the Unity Game Engine | C# Unity Tool  |
 | [Audio Playground](./FMODProj.html) | FMOD prototype | University Project  |
-
-* * *
-
-
-### Education & Employment
-
-| Name | duration | Role |
-|:-----|:---------|:-----|
-| [Abertay University](https://www.abertay.ac.uk/)  | 09/2018 - 09/2022 | BSc (Hons) Computer Game Applications Development 2:1|
-| [Playground Games](https://playground-games.com/) | 12/2022 - Present | Systems Engineer Grade 1|
 
 * * *
 
