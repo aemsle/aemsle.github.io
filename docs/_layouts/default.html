@@ -1,30 +1,66 @@
+{% case site.color-scheme %}
+  {% when "", nil, false, 0, empty %}
+    {% assign ColorScheme = "auto" %}
+  {% else %}
+    {% assign ColorScheme = site.color-scheme %}
+{% endcase %}
+
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body id="page-top" class="index">
-{% include nav.html %}
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", ColorScheme | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
-{{ content }}
+    <link rel="preload" href="{{site.logo | relative_url}}" as="image">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <header>
+          {% if site.logo %}
+            <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
+          {% endif %}
 
-{% include footer.html %}
+          {% if site.blank_title %}
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          {% else %}
+            <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          {% endif %}
 
-<!-- jQuery -->
-<script src="/vendor/jquery/jquery.min.js"></script>
+          {% if site.email %}
+            <p class="addr"><i class="fa-regular fa-envelope"></i>&nbsp;{{ site.email }}</p>
+          {% endif %}
 
-<!-- Bootstrap Core JavaScript -->
-<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+          {% include sidebar.html %}
 
-<!-- Contact Form JavaScript -->
-<script src="/assets/js/jqBootstrapValidation.js"></script>
-<script src="/assets/js/contact_me.js"></script>
+        </header>
 
-<!-- Theme JavaScript -->
-<script src="/assets/js/agency.js"></script>
+        {% include links-mobile.html %}
 
-</body>
+        <div class="sidebar-footer">
+          {%- include footer.html -%}
+        </div>
+      </div>
+      <section>
 
+      {{ content }}
+
+      </section>
+      <footer>
+        {%- include footer.html -%}
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
 </html>
