@@ -19,7 +19,7 @@ layout: default
 | Name | desc | type |
 |:-----|:-----|:-----|
 | [Escape The UwUverse](./Uwuverse.html) | Game developed for DARE 2022 | Video Game  |
-| [Julia Set Renderer](./JuliaSet.html) | GPGPU example that renders an arbitrary julia set | GPU Visualization   |
+| [Julia Set Renderer](./juliaSet.html) | GPGPU example that renders an arbitrary julia set | GPU Visualization   |
 | [CheeseBoard](./Cheeseboard.html) | Hobby Game Engine | Game Engine/Editor  |
 | [Wired Up](./WiredUp.html) | 64th Place in GMTK 2021 Game Jam | Video Game  |
 | [Blu Cow App Manager](./AppManager.html) | Singleton Utility for the Unity Game Engine | C# Unity Tool  |
