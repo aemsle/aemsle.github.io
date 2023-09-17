@@ -9,7 +9,7 @@ layout: default
 
 | Name | desc | type |
 |:-----|:-----|:-----|
-|[Fable](./Fable.html) | Fable developed by Plaground Games | Video Game  |
+|[Fable](./Fable.html) | Project developed by Playground Games | Video Game  |
 
 * * *
 
